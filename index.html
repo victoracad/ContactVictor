@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  
+</head>
+<body>
+
+
+  <div id="popup" class="popup" onclick="closeConfirmMsg()">
+    <div class="popup-content" style="display: flex; flex-direction: column; gap: 10px;">
+        
+        
+        <div class="msgSent" style="display: flex; flex-direction: row; gap: 10px;">
+            <img src="assets/images/icon-success-check.svg" alt="">
+            <p>Message Sent!</p>
+        </div>
+
+        <b style="font-size: 15px; color: hsl(186, 15%, 59%);">Thanks for completing the form. We'll be in touch soon!</b>
+
+    </div>
+
+
+</div>
+<div id="spaceSky"></div>
+
+  <section>
+    <h2>Contact Us</h2>
+    <!-- Area do nome e do Sobrenome -->
+    <div id="name" class="side" style="margin-bottom: 16px;">
+      <div class="column1">
+        <label for="txtfName">First Name *</label>
+        <input type="text" class="inputSpace" name="txtfName" id="txtfName" onclick="clearErroName()">
+        <div class="erromsg" id="erro1">
+          <!--Mensagem de erro aparecerá aqui-->
+        </div>
+      </div>
+
+      <div class="column1">
+        <label for="txtlName">Last Name *</label>
+        <input type="text" class="inputSpace" name="txtlName" id="txtlName" onclick="clearErroLastName()">
+        <div class="erromsg" id="erro2">
+          <!--Mensagem de erro aparecerá aqui-->
+        </div>
+      </div>
+    </div>
+    <!-- Area do nome e do Sobrenome -->
+
+
+
+    <!-- Area do email -->
+    <div class="column" id="email">
+      <label for="txtEmail">Email Address *</label>
+      <input type="email" class="inputSpace" id="txtEmail" onclick="clearErroEmail()" >
+      <div class="erromsg" id="erro3">
+        <!--Mensagem de erro aparecerá aqui-->
+      </div>
+    </div>
+    <!-- Area do email -->
+
+    <p>Query Type *</p>
+    <!-- Area do radio -->
+    <div class="new">
+      <div id="radio" class="side normal">
+
+        <div class="radio-container" onclick="checkBack('radio1')" >
+          <input type="radio" id="radio1" name="query" class="checkboxRad" onclick="checkBack()">
+          <label for="radio1">General Enquiry</label>
+        </div>
+
+        <div class="radio-container" onclick="checkBack('radio2')" >
+          <input type="radio" id="radio2" name="query" class="checkboxRad" onclick="checkBack()">
+          <label for="radio2">Support Request</label>
+        </div>
+      
+      </div>
+
+      <div class="erromsgEsp" id="erro6">
+        <!--Mensagem de erro aparecerá aqui-->
+      </div>
+    </div>
+    
+    
+    <!-- Area do radio -->
+
+    <!-- Area da mensagem -->
+    <div id="msg">
+      <label for="txtMesage">Message *</label>
+      <textarea class="inputSpace" id="txtMesage" rows="4" cols="50" onclick="clearErroMesage()"></textarea>
+
+      <div class="erromsg" id="erro4">
+        <!--Mensagem de erro aparecerá aqui-->
+      </div>
+
+    </div>
+    <!-- Area da mensagem -->
+
+    <!-- Area do botão check -->
+    <div class="check">
+      <input type="checkbox" id="checkbox1" class="checkboxRad" onclick="clearErroCheck()">
+      <label for="checkbox1">I consent to being contacted by the team *</label>
+
+      <div class="erromsg" id="erro5">
+        <!--Mensagem de erro aparecerá aqui-->
+      </div>
+    </div>
+    <!-- Area do botão check -->
+
+    <div class="button">
+      <input type="button" name="btn" id="button" value="Submit" onclick="verificar()">
+    </div>
+  </section>
+
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/victoracad">Victor Carvalho</a>.
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

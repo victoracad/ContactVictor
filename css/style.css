@@ -1,0 +1,187 @@
+/*Area do corpo da página*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Karla;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    display: flex;
+    background-color: hsl(148, 38%, 91%);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+
+}
+/*Area do corpo da página*/
+
+/*Area do card (section)*/
+section{
+    width: 650px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 25px;
+}
+h2{
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+/*Area dos nomes firstname and last names*/
+.side{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+.column1{
+    display: flex;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    flex-direction: column;
+}
+
+.inputSpace{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 0.1px solid hsl(186, 15%, 59%);
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 20px;
+    font-size: medium;
+    resize: none; 
+    overflow-wrap: break-word; 
+}
+.inputSpace:hover{
+    border: 0.1px solid hsl(169, 82%, 27%);
+}
+/*Area dos nomes firstname and last names*/
+
+/*Area do form em formato radio*/
+
+label{
+    cursor: pointer;
+}
+
+.radio-container {
+    display: flex;
+    align-items: center;
+    padding: 17px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: 0.1px solid hsl(186, 15%, 59%);
+    border-radius: 10px;
+    width: 100%;
+
+}
+.checkboxRad{
+    margin-right: 10px;
+}
+/*Area do form em formato radio*/
+#email{
+    margin-bottom: 30px;
+}
+#msg{
+    margin-bottom: 30px;
+}
+.check{
+    margin-bottom: 30px;
+}
+#txtMesage{
+    height: 100px;
+}
+/*Area do botão submit*/
+#button{
+    padding: 17px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    background-color: hsl(169, 82%, 27%);
+    cursor: pointer;
+
+}
+#button:hover{
+    background-color: hsl(168, 83%, 14%);
+}
+/*Area do botão submit*/
+.erromsg{
+    color: red;
+    margin-top: 10px;
+}
+.erromsgEsp{
+    color: red;
+    
+}
+.new{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    justify-content: center;
+    align-items: baseline;
+    z-index: 1000;
+    color: white;
+}
+
+.popup-content {
+    background-color: hsl(187, 24%, 22%);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 443px;
+    margin-top: 20px;
+}
+
+#spaceSky{
+    display: none;
+}
+
+
+@media (max-width: 420px) {
+    .side{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 0px;
+    }
+    section{
+        width: 90%;
+        margin-top: 200px;
+    }
+    #spaceSky{
+        border: 1px solid black;
+        width: 100px;
+        margin-bottom: 100px;
+        display: block;
+    }
+    #txtMesage{
+        height: 200px;
+    }
+}
+
+
+/*Area do card (section)*/
